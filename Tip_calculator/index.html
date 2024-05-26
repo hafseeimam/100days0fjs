@@ -4,11 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Tip Calculator</title>
 </head>
 
 <body>
-
+    <div class="container card">
+        <h1 class="header my">Tip Calculator</h1>
+        <div class="contents py">
+            <h3>Enter the bill amount and tip percentage to calculate the total</h3>
+            <form>
+                <h3>Bill amount:</h3>
+                <input type="number" name="bill" id="bill" placeholder="100">
+                <h3>Tip percentage:</h3>
+                <input type="number" name="percent" id="percent" placeholder="20">
+            </form>
+            <button class="btn" type="submit">Calculate</button>
+            <h3>Total: <span class="total">$120.00</span> </h3>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
