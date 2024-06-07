@@ -4,6 +4,7 @@ const gameBtns = document.querySelectorAll('.btn')
 const playerEl = document.querySelector('.player-score')
 const computerEl = document.querySelector('.computer-score')
 const winnerEl = document.querySelector('.winner')
+const resetbtn = document.querySelector('.reset-btn')
 const choice = ['rock', 'paper', 'scissors']
 
 let playerScore = 0
@@ -15,6 +16,15 @@ function computerMove() {
     let random = Math.floor(Math.random() * 3)
     computerChoice = choice[random]
     console.log(computerChoice);
+}
+
+function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+    playing = true;
+    playerEl.textContent = playerScore;
+    computerEl.textContent = computerScore;
+    winnerEl.textContent = '';
 }
 
 gameBtns.forEach(btn => {
@@ -57,3 +67,4 @@ gameBtns.forEach(btn => {
     )
 })
 
+resetbtn.addEventListener('click', resetGame)

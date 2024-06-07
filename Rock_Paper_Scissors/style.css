@@ -41,6 +41,7 @@ h2 {
     height: 80px;
     font-size: 35px;
     margin: 10px 5px;
+    cursor: pointer;
 }
 
 .rock {
@@ -53,6 +54,17 @@ h2 {
 
 .scissor {
     background-color: green;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgb(191, 113, 11);
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
 }
 
 .score {
@@ -111,6 +123,7 @@ h2 {
         height: 85px;
         font-size: 45px;
         margin: 10px 5px;
+        cursor: pointer;
     }
 
     .score {
@@ -140,8 +153,19 @@ h2 {
         font-size: 35px;
     }
 
-    .btn-container{
+    .btn-container {
         margin-top: 20px;
+    }
+
+    .reset-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 2rem;
+        cursor: pointer;
+        background-color: rgb(191, 113, 11);
+        border: none;
+        border-radius: 5px;
+        color: aliceblue;
     }
 
 }
