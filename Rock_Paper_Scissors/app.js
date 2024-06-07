@@ -15,7 +15,6 @@ let playing = true
 function computerMove() {
     let random = Math.floor(Math.random() * 3)
     computerChoice = choice[random]
-    console.log(computerChoice);
 }
 
 function resetGame() {
@@ -32,7 +31,6 @@ gameBtns.forEach(btn => {
         if (playing) {
             e.preventDefault()
             const getMove = e.target.classList.value
-            console.log(getMove);
             computerMove()
             if (getMove.includes('paper') && computerChoice === 'scissors') {
                 computerScore++
