@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        .st0 { fill: chocolate; }
+        .st1 { font-style:italic; }
+        .st2 { font-size: 28px; }
+    </style>
+    <g>
+        <text x="50%" y="50%" class="st0 st1 st2" text-anchor="middle" alignment-baseline="middle">Hafsat Imam</text>
+    </g>
+</svg>
