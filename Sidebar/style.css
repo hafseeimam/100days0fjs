@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: lightgrey;
+}
+
+.fa-bars {
+    position: fixed;
+    top: 25px;
+    right: 40px;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-bars:hover {
+    color: black;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    transition: all 0.4s linear;
+    transform: translateX(-100%);
+}
+
+.show {
+    transform: translateX(0);
+}
+
+.sidebar_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.sidebar_menu a {
+    display: block;
+    font-size: 24px;
+    text-decoration: none;
+    color: grey;
+    padding: 20px 24px;
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu a:hover {
+    background-color: lightcoral;
+    padding-left: 16px;
+}
+
+.fa-xmark {
+    font-size: 20px;
+    padding-right: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.fa-xmark:hover {
+    color: black;
+}
