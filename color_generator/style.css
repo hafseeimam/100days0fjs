@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin: 15px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color {
+    display: flex;
+    margin: 8px;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+    background-color: pink;
+    height: 150px;
+    width: 250px;
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: solid black 2px;
+}

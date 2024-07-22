@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+    width: 520px;
+    height: 200px;
+    background-color: pink;
+    padding-left: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.682);
+    border-radius: 5px;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 19px;
+}
+
+.password-container {
+    position: relative;
+    width: 480px;
+    height: 48px;
+    margin-top: 20px;
+}
+
+#password-input {
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    background-color: transparent;
+    padding: 0 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+}
+
+.fa-copy {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.fa-copy:hover {
+    opacity: 0.7;
+}
+
+.btn {
+    font-size: 20px;
+    width: 120px;
+    height: 45px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+.copied {
+    position: fixed;
+    bottom: 20px;
+    right: 18px;
+    width: 280px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.active {
+    right: -300px;
+}
