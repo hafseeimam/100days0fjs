@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
+.profile_container {
+    width: 250px;
+    height: 175px;
+    border: 4px dotted green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+i {
+    position: fixed;
+    top: 35%;
+    font-size: 40px;
+}
+
+.stats_num {
+    color: green;
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+.stats{
+    padding-top: 15px;
+    font-weight: 100;
+}
