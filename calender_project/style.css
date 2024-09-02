@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calender {
+    width: 60vw;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.month_header {
+    height: 15vh;
+    background-color: lightseagreen;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.month {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 200;
+}
+
+.date {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.month_days {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 2rem 0 0rem 2rem;
+}
+
+.month_days div {
+    font-size: 1.3rem;
+    width: 4.5rem;
+    height: 4rem;
+    text-align: center;
+}
+
+.month_dates {
+    width: auto;
+    height: 45vh;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0 0 1rem 2rem;
+}
+
+.empty {
+    cursor: pointer;
+    width: 4.5rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.empty:hover {
+    border: 1px solid white;
+}
+
+.active {
+    background-color: #20b2aa;
+}
+
+@media screen and (max-width:500px) {
+    .calender {
+        width: 100vw;
+        height: 70vh;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .month_days {
+        height: 10vh;
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        padding: 3rem 0 0rem 0rem;
+    }
+
+    .month_dates {
+        width: auto;
+        height: 45vh;
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        padding: 0 0 1rem 0rem;
+    }
+
+    .month_header {
+        height: 15vh;
+        background-color: lightseagreen;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
